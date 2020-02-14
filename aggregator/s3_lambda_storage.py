@@ -99,7 +99,7 @@ class StaticStorage(PipelineMixin, ManifestFilesMixin, PatchedS3Boto3Storage):
 
     location = settings.STATICFILES_LOCATION
     max_post_process_passes = 10
-    manifest_strict = False
+    manifest_strict = True
 
 
 class LambdaSASSCompiler(SASSCompiler):
