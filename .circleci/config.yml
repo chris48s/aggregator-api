@@ -36,7 +36,7 @@ jobs:
       - run:
           name: check for insecure dependencies
           command: |
-            pipenv check
+            PIPENV_PYUP_API_KEY="" pipenv check
 
       - run:
           name: check coding standards
